@@ -13,7 +13,6 @@ spec:
   ipFamilyPolicy: SingleStack
   ports:
     - name: 8080-80
-      nodePort: 32689
       port: 8080
       protocol: TCP
       targetPort: 80
