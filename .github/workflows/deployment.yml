@@ -1,7 +1,6 @@
 name: DEPLOY on pages
 
 on: [push, pull_request]
-
 permissions:
   contents: write
 env:
