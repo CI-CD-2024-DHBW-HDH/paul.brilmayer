@@ -1,4 +1,5 @@
 name: DEPLOY on pages
+run-name: ${{ github.actor }} is running deploy on ${{ github.ref }}
 
 on: [push, pull_request]
 permissions:
