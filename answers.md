@@ -67,7 +67,7 @@ Möglichkeiten eine Kubernetes Anwendung von außen zu erreichen:
 - LoadBalancer: Erstellt einen NodePort und einen ClusterIP und nutzt einen Cloud-Loadbalancer, um externen Traffic an den NodePort weiterzuleiten.
 - Ingress: Ermöglicht externen Zugriff auf Dienste im Cluster, bietet LoadBalancing, SSL und benutzerdefiniertes Routing.
 
-6. #Definiere einen Kubernetes Job
+6. # Definiere einen Kubernetes Job
 
 Ein Kubernetes Job ist:
 
