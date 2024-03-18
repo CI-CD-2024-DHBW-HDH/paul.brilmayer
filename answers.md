@@ -66,3 +66,12 @@ Möglichkeiten eine Kubernetes Anwendung von außen zu erreichen:
 - NodePort: Leitet Traffic auf einem bestimmten Port (30000-32767) jedes Knotens an einen Dienst im Cluster weiter.
 - LoadBalancer: Erstellt einen NodePort und einen ClusterIP und nutzt einen Cloud-Loadbalancer, um externen Traffic an den NodePort weiterzuleiten.
 - Ingress: Ermöglicht externen Zugriff auf Dienste im Cluster, bietet LoadBalancing, SSL und benutzerdefiniertes Routing.
+
+6. #Definiere einen Kubernetes Job
+
+Ein Kubernetes Job ist:
+
+- Einmalig: Führt Aufgaben aus, die nicht permanent laufen müssen.
+- Batch-orientiert: Verarbeitet Daten in Stapeln, z.B. Analysen.
+- Pod-basiert: Verwendet Pods für die Ausführung der Aufgaben.
+- Terminiert: Endet automatisch nach Abschluss der Aufgabe.
