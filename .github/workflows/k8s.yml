@@ -13,11 +13,11 @@ jobs:
         with:
           kubeconfig: ${{ secrets.KUBECONFIG }}
       - name: Create namespace
-        run: kubectl create namespace simon-berndt --dry-run=client -o yaml | kubectl apply -f -
+        run: kubectl create namespace paul-brilmayer --dry-run=client -o yaml | kubectl apply -f -
       - name: Deploy
         run: |
-          kubectl apply -f .kubernetes/deployment.yaml
-          kubectl apply -f .kubernetes/service.yaml
+          kubectl apply -f .k8s/deployment.yaml
+          kubectl apply -f .k8s/service.yaml
       - name: Set imagePullSecret
         uses: azure/k8s-create-secret@v4
         with:
