@@ -27,7 +27,7 @@ spec:
       containers:
         - image: ghcr.io/ci-cd-2024-dhbw-hdh/paul.brilmayer:main
           imagePullPolicy: IfNotPresent
-          name: paul.brilmayer
+          name: paulbrirdeploy
           resources: {}
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File

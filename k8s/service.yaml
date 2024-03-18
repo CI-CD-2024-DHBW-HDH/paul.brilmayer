@@ -3,12 +3,9 @@ kind: Service
 metadata:
   labels:
     app: to-do-svc
-  name: to-do-svc
+  name: paulbrirsvc
   namespace: paul-brilmayer
 spec:
-  clusterIP: 10.245.232.23
-  clusterIPs:
-    - 10.245.232.23
   externalTrafficPolicy: Cluster
   internalTrafficPolicy: Cluster
   ipFamilies:
