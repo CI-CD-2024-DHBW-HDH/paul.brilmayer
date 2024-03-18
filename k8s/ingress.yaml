@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: paulbriring
+  namespace: paul-brilmayer
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: paulb.dhbw.schoeppi5.de
+      http:
+        paths:
+          - backend:
+              service:
+                name: to-do-svc
+                port:
+                  number: 8080
+            path: /
+            pathType: Prefix

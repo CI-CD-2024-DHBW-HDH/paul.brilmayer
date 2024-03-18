@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: to-do-svc
+  name: paulbrirsvc
+  namespace: paul-brilmayer
+spec:
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+    - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+    - name: 8080-80
+      nodePort: 32689
+      port: 8080
+      protocol: TCP
+      targetPort: 80
+  selector:
+    app: to-do-deploy
+  sessionAffinity: None
+  type: NodePort
